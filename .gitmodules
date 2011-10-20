@@ -16,3 +16,6 @@
 [submodule "bundle/wombat256"]
 	path = bundle/wombat256
 	url = https://github.com/vim-scripts/wombat256.vim.git
+[submodule "bundle/xmledit"]
+	path = bundle/xmledit
+	url = https://github.com/sukima/xmledit.git
