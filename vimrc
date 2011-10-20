@@ -28,7 +28,7 @@ set ignorecase
 set autoindent		" auto indentation
 set hls
 hi normal guifg=lightgray guibg=black
-colorscheme Wombat256
+colorscheme wombat256mod
 
 filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
