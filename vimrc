@@ -222,3 +222,11 @@ nmap <F11> :!find . -iname '*.c' -o -iname '*.cpp' -o -iname '*.h' -o -iname '*.
 
 " show ansi color
 " :AnsiEsc
+
+" open new tab and jump to the tag
+map <C-[> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+
+"Find files
+command! -nargs=1 FindFile call FindFiles(<q-args>)
+nmap <F6> :FindFile
+
