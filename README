@@ -1,3 +1,17 @@
-You can reference this page.
 
+### add new plugin with git submodule
+# example:
+# git submodule add http://github.com/tpope/vim-fugitive.git bundle/fugitive
+# git add .
+# git commit -m "Install Fugitive.vim bundle as a submodule."
+
+#### upgrading a plugin bundle
+# cd ~/.vim/bundle/fugitive
+# git pull origin master
+
+### Upgrading all bundled plugins
+# git submodule foreach git pull origin master
+
+
+You can reference this page.
 http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
