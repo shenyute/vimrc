@@ -2,6 +2,8 @@
 cd ..
 ln -s vimrc/vimrc .vimrc
 ln -s vimrc .vim
+ln -s vimrc/bashrc .bashrc
+ln -s vimrc/screenrc .screenrc
 cd .vim
 git submodule init
 git submodule update
