@@ -21,6 +21,7 @@ alias du='du -h'
 alias df='df -h'
 alias cscope='cscope -R -I/usr/include'
 alias here='export WORKDIR=`pwd`'
+alias tmux='tmux -2'
 export NACL_SDK_ROOT=/home/ytshen/third-party/nacl_sdk/pepper_15
 
 # enable color support of ls and also add handy aliases
