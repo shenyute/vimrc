@@ -45,7 +45,7 @@ export EDITOR=vim
 
 
 # colorful man page
-export TERM=xterm
+#export TERM=xterm
 export PAGER="`which less` -s"
 export BROWSER="$PAGER"
 export LESS_TERMCAP_mb=$'\E[0;34m'
