@@ -269,7 +269,7 @@ nnoremap <silent> <Esc> :call CloseScratch()<CR>
 " ctrlp plugin
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_working_path_mode = 'ra'
-let g:ctrlp_user_command = 'find %s -type f'       " MacOSX/Linux
+"let g:ctrlp_user_command = 'find %s -type f'       " MacOSX/Linux
 let g:ctrlp_open_new_file = 'v'
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 "Pressing <c-o> or <c-y> will then prompt for a keypress. The key can be:
