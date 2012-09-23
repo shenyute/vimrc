@@ -266,5 +266,21 @@ nnoremap <silent> <Leader>f :call Gather(input("Search for: "))<CR>
 nnoremap <silent> <Leader>F :call Gather(@/)<CR>
 nnoremap <silent> <Esc> :call CloseScratch()<CR>
 
-" ctrlp
-et runtimepath^=~/.vim/bundle/ctrlp.vim
+" ctrlp plugin
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_user_command = 'find %s -type f'       " MacOSX/Linux
+let g:ctrlp_open_new_file = 'v'
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+"Pressing <c-o> or <c-y> will then prompt for a keypress. The key can be:
+"  t - open in tab(s)
+"  h - open in horizontal split(s)
+"  v - open in vertical split(s)
+"  i - open as hidden buffers (for <c-o> only)
+"  c - clear the marked files (for <c-o> only)
+"  r - open in the current window (for <c-y> only)
+"  <esc>, <c-c>, <c-u> - cancel and go back to the prompt.
+"  <cr> - use the default behavior specified with
+"  |g:ctrlp_open_new_file| and
+"  |g:ctrlp_open_multiple_files|.
+
