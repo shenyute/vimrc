@@ -265,3 +265,6 @@ nnoremap <silent> <Leader>f :call Gather(input("Search for: "))<CR>
 " @/ mean last uname register, you can check by :dis
 nnoremap <silent> <Leader>F :call Gather(@/)<CR>
 nnoremap <silent> <Esc> :call CloseScratch()<CR>
+
+" ctrlp
+et runtimepath^=~/.vim/bundle/ctrlp.vim
