@@ -284,3 +284,14 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 "  |g:ctrlp_open_new_file| and
 "  |g:ctrlp_open_multiple_files|.
 
+"ack.vim
+":Ack [options] {pattern} [{directory}]
+" ack doc: http://betterthangrep.com/
+" o    to open (same as enter)
+" go   to preview file (open but maintain focus on ack.vim results)
+" t    to open in new tab
+" T    to open in new tab silently
+" v    to open in vertical split
+" gv   to open in vertical split silently
+" q    to close the quickfix window
+let g:ackprg="ack-grep -H --nocolor --nogroup --column"
