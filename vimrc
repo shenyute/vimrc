@@ -205,11 +205,6 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
-" FuzzyFinder setting
-map ff <esc>:FufFile<cr>
-map fb <esc>:FufBuffer<cr>
-map ft <esc>:FufTag<cr>
-
 " hightlight temp keyword by using \* and clear by \c
 nmap <leader>* :syn match TempKeyword /\<<C-R>=expand("<cword>")<CR>\>/<CR>
 nmap <leader>c :syn clear TempKeyword<CR>
@@ -225,46 +220,6 @@ nmap <F11> :!find . -iname '*.c' -o -iname '*.cpp' -o -iname '*.h' -o -iname '*.
 
 " open new tab and jump to the tag
 map <C-[> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
-
-"Find files
-command! -nargs=1 FindFile call FindFiles(<q-args>)
-nmap <F6> :FindFile
-
-
-" Gather search hits, and display in a new scratch buffer.
-function! Gather(pattern)
-  if !empty(a:pattern)
-    let save_cursor = getpos(".")
-    let orig_ft = &ft
-    " append search hits to results list
-    let results = []
-    execute "g/" . a:pattern . "/call add(results, getline('.'))"
-    call setpos('.', save_cursor)
-    if !empty(results)
-      " put list in new scratch buffer
-      new
-      setlocal buftype=nofile bufhidden=hide noswapfile
-      execute "setlocal filetype=".orig_ft
-      call append(1, results)
-      1d  " delete initial blank line
-    endif
-  endif
-endfunction
-
-" Delete the current buffer if it is a scratch buffer (any changes are lost).
-function! CloseScratch()
-  if &buftype == "nofile" && &bufhidden == "hide" && !&swapfile
-    " this is a scratch buffer
-    bdelete
-    return 1
-  endif
-  return 0
-endfunction
-
-nnoremap <silent> <Leader>f :call Gather(input("Search for: "))<CR>
-" @/ mean last uname register, you can check by :dis
-nnoremap <silent> <Leader>F :call Gather(@/)<CR>
-nnoremap <silent> <Esc> :call CloseScratch()<CR>
 
 " ctrlp plugin
 set runtimepath^=~/.vim/bundle/ctrlp.vim
@@ -295,3 +250,4 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 " gv   to open in vertical split silently
 " q    to close the quickfix window
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+nnoremap <silent> <Leader>g :Ack<CR>
