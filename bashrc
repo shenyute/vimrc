@@ -7,6 +7,7 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 #export PATH=/usr/local/lib/cw:/home/ytshen/usr/erlang/bin:$PATH
+export PATH=~/bin:$PATH
 export PATH=/home/ytshen/usr/jython/bin:/home/ytshen/usr/jdk1.6.0_25/bin:/home/ytshen/usr/erlang/bin:$PATH
 export PATH=$PATH:/home/ytshen/usr/node/bin
 export PATH=$PATH:/home/ytshen/third-party/android-sdk-linux_x86/tools/:/home/ytshen/third-party/android-sdk-linux_x86/platform-tools:/home/ytshen/third-party/android-ndk-r7

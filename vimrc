@@ -294,4 +294,6 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 " v    to open in vertical split
 " gv   to open in vertical split silently
 " q    to close the quickfix window
-let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+"let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+let g:ackprg="gid_with_col.py"
+nnoremap <silent> <Leader>g :Ack<CR>
