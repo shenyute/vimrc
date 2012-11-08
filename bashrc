@@ -84,3 +84,8 @@ function see() {
     vi `which $1`
 }
 complete -c command see
+
+# vim mode
+set -o vi
+# ^l clear screen
+bind -m vi-insert "\C-l":clear-screen
