@@ -2,7 +2,7 @@
 cd ..
 ln -s vimrc/vimrc .vimrc
 ln -s vimrc .vim
-ln -s vimrc/bashrc .bashrc
+ln -s vimrc/bashrc .bash_aliases
 ln -s vimrc/screenrc .screenrc
 ln -s vimrc/tmux.conf .tmux.conf
 mkdir ~/bin

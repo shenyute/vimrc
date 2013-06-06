@@ -9,10 +9,9 @@ fi
 #export PATH=/usr/local/lib/cw:/home/ytshen/usr/erlang/bin:$PATH
 export PATH=~/bin:$PATH
 export PATH=/home/ytshen/usr/jython/bin:/home/ytshen/usr/jdk1.6.0_25/bin:/home/ytshen/usr/erlang/bin:$PATH
-export PATH=$PATH:/home/ytshen/usr/node/bin
-export PATH=$PATH:/home/ytshen/third-party/android-sdk-linux_x86/tools/:/home/ytshen/third-party/android-sdk-linux_x86/platform-tools:/home/ytshen/third-party/android-ndk-r7
-export PATH=$PATH:/home/ytshen/third-party/depot_tools
-export ERL_LIBS=/home/ytshen/proj/riak-0.14.0/rel/riak/lib
+export PATH=$PATH:/home/ytshen/android-ndk-r8d
+export PATH=$PATH:/home/ytshen/adt-bundle-linux/sdk/platform-tools
+
 alias ls='ls --color'
 #alias vi='vim'
 alias mv='mv -iv'

@@ -41,7 +41,7 @@ let g:pydiction_location = '/home/command/.vim/after/ftplugin/pydiction/complete
 
 "NERDTree
 "nnoremap <silent> <F5> :NERDTree<CR>
-map <F2> :NERDTreeToggle<CR>
+map <F5> :NERDTreeToggle<CR>
 "Use the natural vim navigation keys hjkl to navigate the files.
 "Press o to open the file in a new buffer or open/close directory.
 "Press t to open the file in a new tab.
