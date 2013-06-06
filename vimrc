@@ -14,6 +14,10 @@ set textwidth=85
 set wrap
 set wrapmargin=85
 
+" fswitch
+au! BufEnter *.cc,*.cpp let b:fswitchdst = 'h' | let b:fswitchlocs = '.'
+au! BufEnter *.h let b:fswitchdst = 'cc,cpp' | let b:fswitchlocs = '.'
+
 " screen vim ctrl+pageup, pagedown
 :nmap <ESC>[5;5~ <C-PageUp>
 :nmap <ESC>[6;5~ <C-PageDown>
