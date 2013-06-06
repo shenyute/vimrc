@@ -31,3 +31,6 @@
 [submodule "bundle/protodef"]
 	path = bundle/protodef
 	url = https://github.com/derekwyatt/vim-protodef.git
+[submodule "bundle/fswitch"]
+	path = bundle/fswitch
+	url = https://github.com/derekwyatt/vim-fswitch.git
