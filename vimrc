@@ -247,9 +247,11 @@ map <C-[> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 " ctrlp plugin
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_working_path_mode = 'ra'
-"let g:ctrlp_user_command = 'find %s -type f'       " MacOSX/Linux
+let g:ctrlp_user_command = 'find %s -type f'       " MacOSX/Linux
 let g:ctrlp_open_new_file = 'v'
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+let g:ctrlp_clear_cache_on_exit = 0 " dont clean cache when leaving vim
+let g:ctrlp_max_files = 1000000 " increate cache files to avoid missing file
 "Pressing <c-o> or <c-y> will then prompt for a keypress. The key can be:
 "  t - open in tab(s)
 "  h - open in horizontal split(s)
