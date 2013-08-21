@@ -14,6 +14,25 @@ set textwidth=85
 set wrap
 set wrapmargin=85
 
+" ======================
+" Vundle setting
+" ======================
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'scrooloose/syntastic'
+"Bundle 'scrooloose/nerdtree'
+"Bundle 'kien/ctrlp.vim'
+"Bundle 'mileszs/ack.vim'
+"Bundle 'majutsushi/tagbar'
+"Bundle 'vim-scripts/matchit.zip'
+"Bundle 'vim-scripts/wombat256.vim'
+"Bundle 'vim-scripts/cscope_macros.vim'
+
+" YouCompleteMe
+let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
+
 " fswitch
 au! BufEnter *.cc,*.cpp let b:fswitchdst = 'h' | let b:fswitchlocs = '.'
 au! BufEnter *.h let b:fswitchdst = 'cc,cpp' | let b:fswitchlocs = '.'

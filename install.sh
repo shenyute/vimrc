@@ -10,4 +10,11 @@ cp vimrc/gid_with_col.py ~/bin
 cd .vim
 git submodule init
 git submodule update
+git clone https://github.com/gmarik/vundle.git bundle/vundle
 
+# install all bundle module vundle
+vim +BundleInstall +qall
+
+# need vim7.3.584
+cd bundle/YouCompleteMe
+./install.sh --clang-completer
