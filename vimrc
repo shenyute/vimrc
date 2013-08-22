@@ -13,6 +13,7 @@ set nobackup
 set textwidth=85
 set wrap
 set wrapmargin=85
+set smartcase
 
 " ======================
 " Vundle setting
@@ -277,3 +278,6 @@ let g:ctrlp_max_files = 1000000 " increate cache files to avoid missing file
 "let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 let g:ackprg="gid_with_col.py"
 nnoremap <silent> <Leader>g :Ack<CR>
+
+" customized setting
+so ~/.vimrc_private
