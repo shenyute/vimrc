@@ -22,6 +22,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'scrooloose/syntastic'
+Bundle 'https://github.com/tpope/vim-fugitive'
 "Bundle 'scrooloose/nerdtree'
 "Bundle 'kien/ctrlp.vim'
 "Bundle 'mileszs/ack.vim'
@@ -29,6 +30,10 @@ Bundle 'scrooloose/syntastic'
 "Bundle 'vim-scripts/matchit.zip'
 "Bundle 'vim-scripts/wombat256.vim'
 "Bundle 'vim-scripts/cscope_macros.vim'
+
+" gugitive
+" :Gblame for blame
+" o to open the revision
 
 " YouCompleteMe
 let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
