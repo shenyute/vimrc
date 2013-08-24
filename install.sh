@@ -11,6 +11,7 @@ cd .vim
 git submodule init
 git submodule update
 git clone https://github.com/gmarik/vundle.git bundle/vundle
+touch ~/.vimrc_private
 
 # install all bundle module vundle
 vim +BundleInstall +qall

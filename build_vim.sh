@@ -21,4 +21,4 @@ cd vim
             --enable-luainterp \
             --enable-gui=gtk2 --enable-cscope --prefix=/usr
 make VIMRUNTIMEDIR=/usr/share/vim/vim74
-sudo make checkinstall
+sudo checkinstall
