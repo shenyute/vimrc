@@ -1,0 +1,17 @@
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  log = auto
+[user]
+  name = YuTeh Shen
+  email = shenyute@gmail.com
+[core]
+  deltaBaseCacheLimit = 1G
+[alias]
+  dc = diff --cached
+  co = checkout
+  log-all = log --graph --branches --decorate --oneline
+  st = status
+  ci = commit
+  log-st = log --stat
