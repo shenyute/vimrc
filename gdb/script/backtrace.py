@@ -37,7 +37,7 @@ class ShorternBacktraceCommand(gdb.Command):
             else:
                 try:
                     num = int(s)
-                except Exception, e:
+                except Exception as e:
                     pass
 
         # Extract frame info.
