@@ -24,6 +24,8 @@ Bundle 'gmarik/vundle'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'scrooloose/syntastic'
 Bundle 'https://github.com/tpope/vim-fugitive'
+Bundle 'rhysd/vim-clang-format'
+Plugin 'airblade/vim-gitgutter'
 "Bundle 'scrooloose/nerdtree'
 "Bundle 'kien/ctrlp.vim'
 "Bundle 'mileszs/ack.vim'
@@ -106,10 +108,10 @@ let g:erlangFold=1
 
 let python_highlight_all = 1
 set expandtab        "replace <TAB> with spaces
-set tabstop=4 "4 space tab
-set shiftwidth=4 "The amount to block indent when using < and >
+set tabstop=2 "4 space tab
+set shiftwidth=2 "The amount to block indent when using < and >
 set smarttab "Uses shiftwidth instead of tabstop at start of lines
-set softtabstop=4 "Causes backspace to delete 4 spaces = converted <TAB>
+set softtabstop=2 "Causes backspace to delete 4 spaces = converted <TAB>
 au FileType Makefile set noexpandtab
 "-------------
 "for javascript indent
