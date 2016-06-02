@@ -3,6 +3,9 @@
   status = auto
   branch = auto
   log = auto
+  interactive = auto
+  ui = true
+  pager = true
 [user]
   name = YuTeh Shen
   email = shenyute@gmail.com
@@ -16,3 +19,5 @@
   ci = commit
   log-st = log --stat
   wdiff = diff --color-words
+[push]
+	default = simple

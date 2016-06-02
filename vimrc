@@ -26,6 +26,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'https://github.com/tpope/vim-fugitive'
 Bundle 'rhysd/vim-clang-format'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'editorconfig/editorconfig-vim'
 "Bundle 'scrooloose/nerdtree'
 "Bundle 'kien/ctrlp.vim'
 "Bundle 'mileszs/ack.vim'
@@ -33,6 +34,9 @@ Plugin 'airblade/vim-gitgutter'
 "Bundle 'vim-scripts/matchit.zip'
 "Bundle 'vim-scripts/wombat256.vim'
 "Bundle 'vim-scripts/cscope_macros.vim'
+
+" editorconfig need to let fugitive work well
+let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
 " gugitive
 " :Gblame for blame
@@ -285,6 +289,21 @@ let g:ctrlp_max_files = 1000000 " increate cache files to avoid missing file
 "let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 let g:ackprg="gid_with_col.py"
 nnoremap <silent> <Leader>g :Ack<CR>
+
+" clang-format
+let g:clang_format#style_options = {
+            \ "AccessModifierOffset" : -4,
+            \ "AllowShortIfStatementsOnASingleLine" : "true",
+            \ "AlwaysBreakTemplateDeclarations" : "true",
+            \ "Standard" : "C++11"}
+
+" map to <Leader>cf in C++ code
+autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
+autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
+" if you install vim-operator-user
+"autocmd FileType c,cpp,objc map <buffer><Leader>x <Plug>(operator-clang-format)
+" Toggle auto formatting:
+nmap <Leader>C :ClangFormatAutoToggle<CR>
 
 " customized setting
 so ~/.vimrc_private

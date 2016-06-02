@@ -2,17 +2,14 @@
 
 # User specific aliases and functions
 
+export CCACHE_BASEDIR=/home/ytshen
+
 # Source global definitions
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 #export PATH=/usr/local/lib/cw:/home/ytshen/usr/erlang/bin:$PATH
-export PATH=~/bin:$PATH
-export PATH=/home/ytshen/usr/jython/bin:/home/ytshen/usr/jdk1.6.0_25/bin:/home/ytshen/usr/erlang/bin:$PATH
-export PATH=$PATH:/home/ytshen/android-ndk-r8d
-export PATH=$PATH:/home/ytshen/adt-bundle-linux/sdk/platform-tools
-export PATH=~/bin:$PATH:~/bin/depot_tools
-export PATH=$PATH:/home/ytshen/android-ndk-r8d
+export PATH=~/bin:$PATH:~/bin/depot_tools:~/bin/gj/bin
 alias svndiff='svn diff --diff-cmd colordiff'
 
 alias ls='ls --color'
