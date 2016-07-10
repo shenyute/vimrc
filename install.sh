@@ -9,6 +9,9 @@ ln -s vimrc/gitconfig .gitconfig
 ln -s vimrc/gdbinit .gdbinit
 ln -s vimrc/gdb gdb
 
+t clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+
 mkdir ~/bin
 cp vimrc/gid_with_col.py ~/bin
 cd .vim
