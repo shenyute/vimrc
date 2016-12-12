@@ -12,12 +12,14 @@
 [core]
   deltaBaseCacheLimit = 1G
 [alias]
-  dc = diff --cached
+  dc = diff --cached -w
   co = checkout
   log-all = log --graph --branches --decorate --oneline
   st = status
   ci = commit
   log-st = log --stat
-  wdiff = diff --color-words
+  wdiff = diff -w --color-words
+  dd = diff -w
+  ss = show -w
 [push]
 	default = simple

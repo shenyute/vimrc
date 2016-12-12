@@ -3,6 +3,7 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+set wildmenu
 syntax on
 set cin
 set noai
@@ -36,12 +37,17 @@ Plugin 'junegunn/fzf.vim'
 "Bundle 'vim-scripts/wombat256.vim'
 "Bundle 'vim-scripts/cscope_macros.vim'
 
+" syntastic setting
+" for c++11
+let g:syntastic_cpp_compiler = 'clang++'
+let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
+
 " fzf setting
 set rtp+=~/.fzf
 " Mapping selecting mappings
 " Insert mode completion
-imap <c-p><c-p> <plug>(fzf-complete-path)
-nmap <c-p> :Files<CR>
+imap <C-p><c-p> <plug>(fzf-complete-path)
+nmap <C-p> :Files<CR>
 
 " editorconfig need to let fugitive work well
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
