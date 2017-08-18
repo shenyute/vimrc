@@ -4,6 +4,8 @@
 
 export CCACHE_BASEDIR=/home/ytshen
 
+ulimit -c unlimited
+
 # Source global definitions
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
