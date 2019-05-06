@@ -112,6 +112,7 @@ Plug 'jelera/vim-javascript-syntax'
 "" Python Bundle
 Plug 'davidhalter/jedi-vim'
 Plug 'raimon49/requirements.txt.vim', {'for': 'requirements'}
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 
 "*****************************************************************************
@@ -581,3 +582,19 @@ endif
 
 " customized setting
 so ~/vimrc/vimrc_private
+
+" vim-go
+set updatetime=100
+let g:go_auto_type_info = 1
+let g:go_auto_sameids = 1
+" set status line
+set statusline =
+" File description
+set statusline +=%f
+" Name of the current function (needs tagbar)
+set statusline +=\ >>\ %{tagbar#currenttag('%s','')}
+" Total number of lines in the file
+set statusline +=%=%-10L
+" Line, column and percentage
+set statusline +=%=%-14.(%l,%c%V%)\ %P
+let g:go_fmt_command = "goimports"

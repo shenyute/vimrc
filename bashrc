@@ -15,6 +15,7 @@ export PATH=~/bin:$PATH:~/bin/depot_tools:~/bin/gj/bin
 alias svndiff='svn diff --diff-cmd colordiff'
 
 alias ls='ls --color'
+export GO111MODULE=on
 #alias vi='vim'
 alias mv='mv -iv'
 alias cp='cp -iv'
