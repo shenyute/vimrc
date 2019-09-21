@@ -50,6 +50,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'rhysd/vim-clang-format'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'mileszs/ack.vim'
+Plug 'fcamel/gj'
 Plug 'gergap/wombat256'
 Plug 'prettier/vim-prettier', {
     \ 'do': 'yarn install',
